@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .col {
+    
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
 <body>
     <!-- header - 1 row 2 col -->
     <div class="container">
@@ -31,13 +54,13 @@
                 <!-- footer -->
                   <div class="row">
                     <div class="col">
-                      1 of 3
+                      <p>Aliquip exercitation anim quis cupidatat Lorem ea tempor occaecat. Minim eiusmod aliqua mollit excepteur minim id qui. Minim id culpa anim mollit. Proident velit commodo occaecat do. Deserunt qui enim laboris et incididunt sint consequat et et.</p>
                     </div>
                     <div class="col">
-                      2 of 3
+                      <p>Aliquip exercitation anim quis cupidatat Lorem ea tempor occaecat. Minim eiusmod aliqua mollit excepteur minim id qui. Minim id culpa anim mollit. Proident velit commodo occaecat do. Deserunt qui enim laboris et incididunt sint consequat et et.</p>
                     </div>
                     <div class="col">
-                      3 of 3
+                      <p>Aliquip exercitation anim quis cupidatat Lorem ea tempor occaecat. Minim eiusmod aliqua mollit excepteur minim id qui. Minim id culpa anim mollit. Proident velit commodo occaecat do. Deserunt qui enim laboris et incididunt sint consequat et et.</p>
                     </div>
                   </div>
                 </div>
