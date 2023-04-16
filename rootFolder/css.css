@@ -1,0 +1,26 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.col {
+    
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #cccccc;
+    text-align: center;
+    float: right;
+    width: 30%;
+ /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  
+  content: "";
+  display: table;
+  clear: both;
+}
